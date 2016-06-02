@@ -25,6 +25,7 @@
 </head>
 <body>
 <div id="wrapper">
+
 	<!-- start header -->
 	<header>
         <div class="navbar navbar-default navbar-static-top">
@@ -48,9 +49,9 @@
 								<li><a href="pricingbox.html">Pricing box</a></li>
                             </ul>
                         </li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li class="active"><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,52 +64,117 @@
 			<div class="col-lg-12">
 				<ul class="breadcrumb">
 					<li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
-					<li class="active">Contact</li>
+					<li class="active">Portfolio</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	</section>
 	<section id="content">
-	<div class="map">
-		<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kuningan,+Jakarta+Capital+Region,+Indonesia&amp;aq=3&amp;oq=kuningan+&amp;sll=37.0625,-95.677068&amp;sspn=37.410045,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Kuningan&amp;t=m&amp;z=14&amp;ll=-6.238824,106.830177&amp;output=embed">
-		</iframe>
-	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h4>Get in touch with us by filling <strong>contact form below</strong></h4>
-				<form id="contactform" action="contact/contact.php" method="post" class="validateform" name="send-contact">
-					<div id="sendmessage">
-						 Your message has been sent. Thank you!
-					</div>
-					<div class="row">
-						<div class="col-lg-4 field">
-							<input type="text" name="name" placeholder="* Enter your full name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
-							<div class="validation">
-							</div>
-						</div>
-						<div class="col-lg-4 field">
-							<input type="text" name="email" placeholder="* Enter your email address" data-rule="email" data-msg="Please enter a valid email" />
-							<div class="validation">
-							</div>
-						</div>
-						<div class="col-lg-4 field">
-							<input type="text" name="subject" placeholder="Enter your subject" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
-							<div class="validation">
-							</div>
-						</div>
-						<div class="col-lg-12 margintop10 field">
-							<textarea rows="12" name="message" class="input-block-level" placeholder="* Your message here..." data-rule="required" data-msg="Please write something"></textarea>
-							<div class="validation">
-							</div>
-							<p>
-								<button class="btn btn-theme margintop10 pull-left" type="submit">Submit message</button>
-								<span class="pull-right margintop20">* Please fill all required form field, thanks!</span>
-							</p>
-						</div>
-					</div>
-				</form>
+				<ul class="portfolio-categ filter">
+					<li class="all active"><a href="#">All</a></li>
+					<li class="web"><a href="#" title="">Web design</a></li>
+					<li class="icon"><a href="#" title="">Icons</a></li>
+					<li class="graphic"><a href="#" title="">Graphic design</a></li>
+				</ul>
+				<div class="clearfix">
+				</div>
+				<div class="row">
+					<section id="projects">
+					<ul id="thumbs" class="portfolio">
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/1.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/2.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="graphic">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/3.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/4.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="web">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/5.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/5.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-5" data-type="icon">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/6.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/6.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/7.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/7.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="graphic">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/8.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/8.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -169,7 +235,7 @@
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							<span>&copy; Moderna 2014 All right reserved. By </span><a href="http://bootstraptaste.com" target="_blank">Bootstrap Themes</a>
+							<span>&copy; Moderna 2014 All right reserved. </span><a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste
 						</p>
                         <!-- 
                             All links in the footer should remain intact. 
@@ -207,6 +273,5 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/validate.js"></script>
 </body>
 </html>
